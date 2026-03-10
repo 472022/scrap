@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#f3f4f6'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 min-h-screen overflow-hidden">
+    <main class="w-full h-screen flex flex-col px-8 py-6">
+        <div class="flex-1 flex flex-col items-center justify-center">
+            <div class="text-center mb-12">
+                <h1 class="text-5xl font-light text-gray-800 mb-2">
+                    Good Morning,
+                </h1>
+                <h2
+                    class="text-6xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent mb-12">
+                    Admin!
+                </h2>
+                <div class="max-w-lg mx-auto relative mb-16">
+                    <input type="text" placeholder="Ask KAI - Your Digital Assistant"
+                        class="w-full px-6 py-4 pr-14 bg-white border-2 border-gray-100 rounded-2xl text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary shadow-lg text-lg">
+                    <button
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-gradient-to-r from-primary to-blue-600 rounded-xl flex items-center justify-center hover:scale-105 transition-all shadow-lg">
+                        <i class="ri-send-plane-line text-white text-lg"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-6 gap-6 mb-16 max-w-5xl mx-auto">
+                <a href="http://172.25.221.30:8002/scratch/auth/login" target="_blank">
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div
+                        class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 border border-gray-100">
+                        <i class="ri-eye-line text-4xl text-primary"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700 text-center">Scrap</span>
+                </div>
+                </a>
+                <a href="">
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div
+                        class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 border border-gray-100">
+                        <i class="ri-trophy-line text-4xl text-amber-500"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700 text-center">Canteen</span>
+                </div>
+                </a>
+                <a href="http://172.25.221.30:8004/admin/login">
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div
+                        class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 border border-gray-100">
+                        <i class="ri-file-text-line text-4xl text-green-500"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700 text-center">Visitors Gate</span>
+                </div>
+                </a>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div
+                        class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 border border-gray-100">
+                        <i class="ri-customer-service-line text-4xl text-purple-500"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700 text-center">Mediaassist</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div
+                        class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 border border-gray-100">
+                        <i class="ri-graduation-cap-line text-4xl text-indigo-500"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700 text-center">MyLxP</span>
+                </div>
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div
+                        class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 border border-gray-100">
+                        <i class="ri-car-line text-4xl text-red-500"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700 text-center">Quest2Travel</span>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-6">
+            </div>
+        </div>
+    </main>
+    <script id="navigation-interactions">
+        document.addEventListener('DOMContentLoaded', function () {
+            const navButtons = document.querySelectorAll('nav button');
+            navButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    navButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-white');
+                        btn.classList.add('text-gray-600');
+                    });
+                    this.classList.remove('text-gray-600');
+                    this.classList.add('bg-primary', 'text-white');
+                });
+            });
+        });
+    </script>
+    <script id="search-functionality">
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.querySelector('input[placeholder="Ask KAI"]');
+            const searchButton = document.querySelector('button i.ri-send-plane-line').parentElement;
+            searchButton.addEventListener('click', function () {
+                const query = searchInput.value.trim();
+                if (query) {
+                    console.log('Searching for:', query);
+                    searchInput.value = '';
+                }
+            });
+            searchInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    searchButton.click();
+                }
+            });
+        });
+    </script>
+    <script id="app-grid-interactions">
+        document.addEventListener('DOMContentLoaded', function () {
+            const appItems = document.querySelectorAll('.grid .group');
+            appItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    const appName = this.querySelector('span').textContent;
+                    console.log('Opening app:', appName);
+                });
+            });
+        });
+    </script>
+    <script id="secondary-buttons">
+        document.addEventListener('DOMContentLoaded', function () {
+            const secondaryButtons = document.querySelectorAll('.flex.justify-center button');
+            secondaryButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const buttonText = this.querySelector('span').textContent;
+                    console.log('Accessing:', buttonText);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
